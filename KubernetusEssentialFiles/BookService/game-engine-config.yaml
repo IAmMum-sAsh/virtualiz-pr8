@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: book-config
+  labels:
+    app: book
+data:
+  EUREKA-SERVICE_URL_DEFAULT_ZONE: http://eureka-service:20100/eureka
+  DATA_BASE_PATH: jdbc:postgresql://game-service-db-service:20207/postgres
